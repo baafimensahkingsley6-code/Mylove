@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Amazing Serwaah ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #12000d;
+    overflow-x: hidden;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,0,100,.25), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(160,0,255,.25), transparent 30%);
+    z-index: -2;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    z-index: 10;
+    pointer-events: none;
+    animation: floatHeart linear forwards;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 11vw, 95px);
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 10px #ff4f81;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #ff4f81,
+            0 0 50px #ff1493,
+            0 0 80px #ff69b4;
+    }
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+    opacity: .95;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #e6005c;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255,0,100,.3);
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(32px, 7vw, 50px);
+    margin-bottom: 40px;
+}
+
+/* =========================
+   LOVE LETTER
+========================= */
+
+.letter {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.3);
+}
+
+.letter p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* =========================
+   TYPING
+========================= */
+
+.typing {
+    min-height: 80px;
+    font-size: clamp(24px, 6vw, 42px);
+    font-weight: bold;
+    color: #ffb3d1;
+}
+
+.cursor {
+    border-right: 3px solid white;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* =========================
+   WHY SPECIAL
+========================= */
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    padding: 30px 20px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: rgba(255,255,255,.15);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.7;
+    opacity: .9;
+}
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.photo {
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #250016;
+    border: 2px solid rgba(255,255,255,.1);
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+/* =========================
+   STORY TIMELINE
+========================= */
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #ff4f81;
+    transform: translateX(-50%);
+}
+
+.story {
+    width: 45%;
+    padding: 25px;
+    margin-bottom: 35px;
+    background: rgba(255,255,255,.08);
+    border-radius: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.story:nth-child(odd) {
+    margin-right: auto;
+}
+
+.story:nth-child(even) {
+    margin-left: auto;
+}
+
+.story h3 {
+    color: #ff9fc1;
+    margin-bottom: 10px;
+}
+
+.story p {
+    line-height: 1.7;
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-box {
+    margin: 30px auto;
+}
+
+.music-btn {
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    cursor: pointer;
+    background: white;
+    color: #e6005c;
+    box-shadow: 0 0 30px rgba(255,255,255,.3);
+}
+
+/* =========================
+   INTERACTIVE HEART
+========================= */
+
+.big-heart {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    cursor: pointer;
+    animation: heartbeat 1.2s infinite;
+    transition: .3s;
+}
+
+.big-heart:hover {
+    transform: scale(1.2);
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+}
+
+.secret {
+    display: none;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.1);
+    animation: appear .8s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-box {
+    max-width: 800px;
+}
+
+.final-box h2 {
+    font-size: clamp(38px, 9vw, 70px);
+    margin-bottom: 25px;
+}
+
+.final-box p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: rgba(0,0,0,.4);
+}
+
+/* =========================
+   MOBILE TIMELINE
+========================= */
+
+@media(max-width:650px) {
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .story,
+    .story:nth-child(odd),
+    .story:nth-child(even) {
+        width: calc(100% - 35px);
+        margin-left: 35px;
+        margin-right: 0;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .photo {
+        height: 260px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>❤️ Amazing Serwaah ❤️</h1>
+
+<div class="typing">
+<span id="typingText"></span><span class="cursor">&nbsp;</span>
+</div>
+
+<p>
+I created this little world just for you.
+Because someone as amazing as you deserves something special. 💕
+</p>
+
+<button class="btn" onclick="goTo('letter')">
+💌 Enter My Heart
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section id="letter">
+
+<h2 class="title">💌 A Letter For You</h2>
+
+<div class="letter">
+
+<p>
+
+Dear Amazing Serwaah ❤️,
+
+<br><br>
+
+I don't know if a website can truly explain how much
+someone means to another person...
+
+but I wanted to try.
+
+<br><br>
+
+You are one of those people who can make an ordinary
+day feel special just by being there.
+
+<br><br>
+
+Your smile, your personality, your energy and simply
+the person you are make you incredibly special.
+
+<br><br>
+
+So I made this website as a small reminder:
+
+<br><br>
+
+<strong>
+You matter. ❤️
+</strong>
+
+<br><br>
+
+You are appreciated.
+
+<br>
+
+And you deserve to be reminded of that.
+
+<br><br>
+
+With love,
+
+<br>
+
+<strong>Someone who thinks you're amazing. ❤️</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY SPECIAL
+========================= -->
+
+<section>
+
+<h2 class="title">
+✨ Why You're Special
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="card-icon">😊</div>
+<h3>Your Smile</h3>
+<p>
+Your smile can make a normal moment feel completely different.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">❤️</div>
+<h3>Your Heart</h3>
+<p>
+The kindness you show and the way you care makes you special.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">✨</div>
+<h3>Your Energy</h3>
+<p>
+There is something about your presence that makes things better.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🥰</div>
+<h3>Simply You</h3>
+<p>
+You don't have to pretend to be anyone else. Being you is enough.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO GALLERY
+========================= -->
+
+<section>
+
+<h2 class="title">
+📸 Our Memories
+</h2>
+
+<div class="gallery">
+
+<!-- Replace photo1.jpg with your picture -->
+
+<div class="photo">
+<img src="photo1.jpg" alt="Our Memory"
+onerror="this.style.display='none'">
+<span>❤️</span>
+</div>
+
+<div class="photo">
+<img src="photo2.jpg" alt="Our Memory"
+onerror="this.style.display='none'">
+<span>💕</span>
+</div>
+
+<div class="photo">
+<img src="photo3.jpg" alt="Our Memory"
+onerror="this.style.display='none'">
+<span>🥰</span>
+</div>
+
+</div>
+
+<p style="margin-top:25px;">
+Our memories deserve their own little place. ❤️
+</p>
+
+</section>
+
+
+<!-- =========================
+     OUR STORY
+========================= -->
+
+<section>
+
+<h2 class="title">
+📖 Our Little Story
+</h2>
+
+<div class="timeline">
+
+<div class="story">
+
+<h3>🌸 The Beginning</h3>
+
+<p>
+This is where our story started.
+A simple moment that became something worth remembering.
+</p>
+
+</div>
+
+<div class="story">
+
+<h3>💕 Getting Closer</h3>
+
+<p>
+Somewhere along the way, talking to you became one of
+those things I genuinely looked forward to.
+</p>
+
+</div>
+
+<div class="story">
+
+<h3>🥰 Special Moments</h3>
+
+<p>
+Every conversation, laugh and memory added another
+little chapter to our story.
+</p>
+
+</div>
+
+<div class="story">
+
+<h3>❤️ Today</h3>
+
+<p>
+And here we are...
+still creating memories and making this story even more beautiful.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<section>
+
+<h2 class="title">
+🎵 A Little Music
+</h2>
+
+<p>
+Press the button and let the music play while you explore.
+</p>
+
+<div class="music-box">
+
+<button class="music-btn" onclick="toggleMusic()">
+🎵
+</button>
+
+</div>
+
+<!--
+IMPORTANT:
+Put your music file in the same folder as this HTML file.
+Rename it to:
+
+love-song.mp3
+-->
+
+<audio id="loveMusic" loop>
+<source src="love-song.mp3" type="audio/mpeg">
+</audio>
+
+<p id="musicStatus">
+Music is currently OFF
+</p>
+
+</section>
+
+
+<!-- =========================
+     SECRET HEART
+========================= -->
+
+<section>
+
+<h2 class="title">
+💗 Tap The Heart
+</h2>
+
+<p>
+There is something hidden inside this heart...
+</p>
+
+<div class="big-heart" onclick="openSecret()">
+❤️
+</div>
+
+<div class="secret" id="secret">
+
+<h2>💌 Secret Message</h2>
+
+<br>
+
+<p style="line-height:1.8;font-size:18px;">
+
+Amazing Serwaah...
+
+<br><br>
+
+If you ever wonder whether you are important,
+come back to this page.
+
+<br><br>
+
+Because somewhere in this little corner of the internet,
+there is a reminder that someone thinks you are
+absolutely amazing. ❤️
+
+<br><br>
+
+Never forget your worth.
+
+<br><br>
+
+💕 You are special. 💕
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FINAL SURPRISE
+========================= -->
+
+<section class="final">
+
+<div class="final-box">
+
+<h2>
+Amazing Serwaah... ❤️
+</h2>
+
+<p>
+
+This website may only be made of HTML, CSS and JavaScript...
+
+<br><br>
+
+but every word on it was created with one person in mind.
+
+<br><br>
+
+<strong>YOU. ❤️</strong>
+
+<br><br>
+
+Thank you for being part of my story.
+
+</p>
+
+<button class="btn" onclick="finalExplosion()">
+💖 One Last Surprise
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+Made with ❤️ for Amazing Serwaah
+</p>
+
+<br>
+
+<p>
+© 2026 — A little website with a lot of love.
+</p>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   SMOOTH NAVIGATION
+========================= */
+
+function goTo(id) {
+
+document.getElementById(id).scrollIntoView({
+behavior: "smooth"
+});
+
+}
+
+
+/* =========================
+   TYPING ANIMATION
+========================= */
+
+const messages = [
+
+"I made this just for you ❤️",
+
+"You are amazing, Serwaah 💕",
+
+"You deserve something beautiful ✨",
+
+"Thank you for being you 🥰",
+
+"Welcome to my little love story ❤️"
+
+];
+
+let messageIndex = 0;
+let characterIndex = 0;
+let deleting = false;
+
+function typeWriter() {
+
+const text = messages[messageIndex];
+
+if(!deleting) {
+
+document.getElementById("typingText").textContent =
+text.substring(0, characterIndex + 1);
+
+characterIndex++;
+
+if(characterIndex === text.length) {
+
+deleting = true;
+
+setTimeout(typeWriter, 1800);
+
+return;
+
+}
+
+} else {
+
+document.getElementById("typingText").textContent =
+text.substring(0, characterIndex - 1);
+
+characterIndex--;
+
+if(characterIndex === 0) {
+
+deleting = false;
+
+messageIndex++;
+
+if(messageIndex >= messages.length) {
+messageIndex = 0;
+}
+
+}
+
+}
+
+setTimeout(typeWriter, deleting ? 45 : 90);
+
+}
+
+typeWriter();
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function createHeart() {
+
+const heart = document.createElement("div");
+
+heart.className = "heart";
+
+const heartTypes = [
+"❤️",
+"💕",
+"💖",
+"💗",
+"💓",
+"💘",
+"💞"
+];
+
+heart.textContent =
+heartTypes[Math.floor(Math.random() * heartTypes.length)];
+
+heart.style.left =
+Math.random() * 100 + "vw";
+
+heart.style.fontSize =
+Math.random() * 25 + 15 + "px";
+
+heart.style.animationDuration =
+Math.random() * 4 + 5 + "s";
+
+document.body.appendChild(heart);
+
+setTimeout(() => {
+
+heart.remove();
+
+}, 9000);
+
+}
+
+setInterval(createHeart, 450);
+
+
+/* =========================
+   MUSIC
+========================= */
+
+let musicPlaying = false;
+
+function toggleMusic() {
+
+const music =
+document.getElementById("loveMusic");
+
+const status =
+document.getElementById("musicStatus");
+
+if(!musicPlaying) {
+
+music.play().then(() => {
+
+musicPlaying = true;
+
+status.textContent =
+"🎵 Music is playing... ❤️";
+
+}).catch(() => {
+
+status.textContent =
+"Add love-song.mp3 to the website folder first.";
+
+});
+
+} else {
+
+music.pause();
+
+musicPlaying = false;
+
+status.textContent =
+"Music is currently OFF";
+
+}
+
+}
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function openSecret() {
+
+const secret =
+document.getElementById("secret");
+
+secret.style.display = "block";
+
+heartExplosion();
+
+secret.scrollIntoView({
+behavior: "smooth",
+block: "center"
+});
+
+}
+
+
+/* =========================
+   HEART EXPLOSION
+========================= */
+
+function heartExplosion() {
+
+for(let i = 0; i < 60; i++) {
+
+const heart =
+document.createElement("div");
+
+heart.textContent = "❤️";
+
+heart.style.position = "fixed";
+
+heart.style.left = "50%";
+
+heart.style.top = "50%";
+
+heart.style.zIndex = "9999";
+
+heart.style.fontSize =
+Math.random() * 25 + 15 + "px";
+
+heart.style.pointerEvents = "none";
+
+const x =
+(Math.random() - .5) * 700;
+
+const y =
+(Math.random() - .5) * 700;
+
+const animation =
+heart.animate(
+
+[
+{
+transform:
+"translate(-50%,-50%) scale(.2)",
+opacity: 1
+},
+
+{
+transform:
+`translate(${x}px,${y}px) scale(1.5)`,
+opacity: 0
+}
+
+],
+
+{
+duration: 1600,
+easing: "ease-out"
+}
+
+);
+
+document.body.appendChild(heart);
+
+animation.onfinish = () => {
+
+heart.remove();
+
+};
+
+}
+
+}
+
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+function finalExplosion() {
+
+heartExplosion();
+
+setTimeout(() => {
+
+alert(
+"❤️ Amazing Serwaah ❤️\n\n" +
+"Never forget how special you are. 💕"
+);
+
+}, 700);
+
+}
+
+</script>
+
+</body>
+</html>
