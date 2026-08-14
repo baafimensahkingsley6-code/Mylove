@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For Jacqueline ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, #12000b, #4a0025, #18000f);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Animated background glow */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      background: rgba(255, 20, 100, 0.25);
+      filter: blur(120px);
+      border-radius: 50%;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: glow 5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        transform: translateX(-50%) scale(0.8);
+        opacity: 0.5;
+      }
+
+      to {
+        transform: translateX(-50%) scale(1.3);
+        opacity: 1;
+      }
+    }
+
+    /* Main section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+    }
+
+    .content {
+      max-width: 850px;
+      z-index: 2;
+    }
+
+    .small-text {
+      font-size: 20px;
+      color: #ffb3d9;
+      margin-bottom: 20px;
+      animation: fadeDown 2s ease;
+    }
+
+    h1 {
+      font-size: clamp(55px, 12vw, 120px);
+      color: #fff;
+      text-shadow:
+        0 0 10px #ff0066,
+        0 0 30px #ff0066,
+        0 0 60px #ff0066;
+      animation: heartbeat 2s infinite;
+    }
+
+    .love-text {
+      margin: 30px auto;
+      max-width: 650px;
+      font-size: clamp(20px, 4vw, 30px);
+      line-height: 1.7;
+      color: #ffe6f2;
+    }
+
+    .highlight {
+      color: #ff4d94;
+      font-weight: bold;
+    }
+
+    /* Button */
+    .love-button {
+      border: none;
+      padding: 18px 35px;
+      border-radius: 50px;
+      background: linear-gradient(45deg, #ff0066, #ff4d94);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255, 0, 102, .7);
+      transition: .3s;
+    }
+
+    .love-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(255, 0, 102, 1);
+    }
+
+    /* Love card */
+    .card {
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 650px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(255, 0, 100, .2);
+    }
+
+    .card h2 {
+      color: #ff6fa8;
+      margin-bottom: 15px;
+    }
+
+    /* Reasons */
+    .reasons {
+      padding: 80px 20px;
+      text-align: center;
+      background: rgba(255, 0, 80, .06);
+    }
+
+    .reasons h2 {
+      font-size: 45px;
+      margin-bottom: 40px;
+      color: #ff80b5;
+      text-shadow: 0 0 20px #ff0066;
+    }
+
+    .reason-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .reason {
+      width: 200px;
+      min-height: 180px;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,100,160,.3);
+      transition: .4s;
+    }
+
+    .reason:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(255,0,100,.3);
+    }
+
+    .reason .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .reason h3 {
+      color: #ff80b5;
+      margin-bottom: 10px;
+    }
+
+    /* Final message */
+    .final {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .final h2 {
+      font-size: clamp(40px, 8vw, 75px);
+      color: #ff80b5;
+      text-shadow: 0 0 25px #ff0066;
+    }
+
+    .final p {
+      max-width: 700px;
+      margin: 25px auto;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      bottom: -50px;
+      font-size: 25px;
+      pointer-events: none;
+      animation: floatHeart linear forwards;
+      z-index: 10;
+    }
+
+    @keyframes floatHeart {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.04);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Surprise */
+    #surprise {
+      display: none;
+      margin-top: 30px;
+      animation: fadeDown 1s ease;
+    }
+
+    #surprise h3 {
+      font-size: 35px;
+      color: #ff80b5;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #ff9ac3;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .reason {
+        width: 90%;
+      }
+
+      .reasons h2 {
+        font-size: 35px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="content">
+
+      <div class="small-text">
+        ❤️ A little something made just for you ❤️
+      </div>
+
+      <h1>Jacqueline</h1>
+
+      <p class="love-text">
+        My beautiful <span class="highlight">Jacqueline</span>,
+        you are one of the most beautiful parts of my life.
+        Every time I think about you, my heart feels a little warmer. ❤️
+      </p>
+
+      <button class="love-button" onclick="showSurprise()">
+        💕 Click For A Surprise 💕
+      </button>
+
+      <div id="surprise" class="card">
+        <h3>I Love You, Jacqueline ❤️</h3>
+
+        <p>
+          I may not always have the perfect words,
+          but I want you to know that you are special to me.
+          Your smile, your personality and the little things
+          that make you who you are mean more to me than you know.
+        </p>
+
+        <br>
+
+        <p>
+          ❤️ You are amazing.<br>
+          ❤️ You are beautiful.<br>
+          ❤️ You are special.<br>
+          ❤️ And you mean so much to me.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REASONS -->
+  <section class="reasons">
+
+    <h2>Reasons I Love You ❤️</h2>
+
+    <div class="reason-container">
+
+      <div class="reason">
+        <div class="icon">❤️</div>
+        <h3>Your Heart</h3>
+        <p>You have a beautiful heart.</p>
+      </div>
+
+      <div class="reason">
+        <div class="icon">😊</div>
+        <h3>Your Smile</h3>
+        <p>Your smile can brighten my day.</p>
+      </div>
+
+      <div class="reason">
+        <div class="icon">✨</div>
+        <h3>Your Beauty</h3>
+        <p>You are beautiful inside and out.</p>
+      </div>
+
+      <div class="reason">
+        <div class="icon">🥰</div>
+        <h3>Your Personality</h3>
+        <p>There is something special about you.</p>
+      </div>
+
+      <div class="reason">
+        <div class="icon">💖</div>
+        <h3>Just You</h3>
+        <p>I love you simply because you are you.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL MESSAGE -->
+  <section class="final">
+
+    <div>
+
+      <h2>Jacqueline ❤️</h2>
+
+      <p>
+        If I could give you one thing in life,
+        I would give you the ability to see yourself
+        through my eyes.
+      </p>
+
+      <p>
+        Then you would understand just how special
+        you really are to me. 💕
+      </p>
+
+      <button class="love-button" onclick="createHearts(40)">
+        ❤️ Send Love ❤️
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    Made with ❤️ especially for Jacqueline
+  </footer>
+
+
+  <script>
+
+    // Create floating hearts automatically
+    function createHeart() {
+
+      const heart = document.createElement("div");
+
+      heart.classList.add("heart");
+
+      const hearts = ["❤️", "💕", "💖", "💗", "💓", "💘", "💝"];
+
+      heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+      heart.style.left = Math.random() * 100 + "vw";
+
+      heart.style.fontSize =
+        (15 + Math.random() * 30) + "px";
+
+      heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 9000);
+    }
+
+
+    // Constant heart animation
+    setInterval(createHeart, 500);
+
+
+    // Surprise button
+    function showSurprise() {
+
+      const surprise =
+        document.getElementById("surprise");
+
+      surprise.style.display = "block";
+
+      createHearts(25);
+
+      window.scrollTo({
+        top: surprise.offsetTop - 100,
+        behavior: "smooth"
+      });
+    }
+
+
+    // Create many hearts
+    function createHearts(number) {
+
+      for (let i = 0; i < number; i++) {
+
+        setTimeout(() => {
+          createHeart();
+        }, i * 80);
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
