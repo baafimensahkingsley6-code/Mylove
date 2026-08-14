@@ -4,424 +4,332 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Nana Yaa Nhyira Twumasi-Ankrah ❤️</title>
+<title>For Joycelyn ❤️</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3, #c471ed);
-    color: white;
+body{
+    font-family:Arial,sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3,#c471ed);
+    color:white;
 }
 
-/* Main container */
-.container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    position: relative;
+/* Main area */
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
-/* Glass card */
-.card {
-    width: 100%;
-    max-width: 600px;
-    padding: 35px 25px;
-    text-align: center;
-    border-radius: 30px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.3);
-    animation: appear 1.5s ease;
-    z-index: 5;
+/* Card */
+.card{
+    max-width:600px;
+    width:100%;
+    text-align:center;
+    padding:35px 25px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    animation:show 1.5s ease;
+    z-index:5;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(50px) scale(0.9);
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(50px);
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
-/* Big heart */
-.big-heart {
-    font-size: 80px;
-    animation: heartbeat 1.2s infinite;
-    margin-bottom: 15px;
+/* Heart animation */
+.big-heart{
+    font-size:80px;
+    animation:beat 1s infinite;
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.25);
+@keyframes beat{
+    50%{
+        transform:scale(1.3);
     }
 }
 
-h1 {
-    font-size: 38px;
-    line-height: 1.2;
-    margin-bottom: 15px;
+h1{
+    font-size:38px;
+    margin:20px 0;
 }
 
-.name {
-    display: block;
-    margin-top: 10px;
-    color: #fff0f5;
-    text-shadow: 0 0 15px white;
+.name{
+    display:block;
+    color:#fff;
+    text-shadow:0 0 20px white;
 }
 
-.subtitle {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 25px;
+.subtitle{
+    font-size:18px;
+    line-height:1.6;
 }
 
-/* Message */
-.message {
-    background: rgba(255,255,255,0.12);
-    padding: 22px;
-    border-radius: 20px;
-    line-height: 1.8;
-    font-size: 17px;
-    margin-bottom: 25px;
+/* Message box */
+.message{
+    margin:25px 0;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.15);
+    line-height:1.8;
 }
 
 /* Button */
-button {
-    border: none;
-    padding: 15px 28px;
-    border-radius: 50px;
-    background: white;
-    color: #e84393;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    transition: 0.3s;
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#e84393;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 }
 
-button:hover {
-    transform: scale(1.08);
-}
-
-button:active {
-    transform: scale(0.95);
+button:hover{
+    transform:scale(1.1);
 }
 
 /* Surprise */
-#surprise {
-    display: none;
-    margin-top: 25px;
-    animation: surprise 1s ease;
+#surprise{
+    display:none;
+    margin-top:25px;
+    animation:pop 1s;
 }
 
-@keyframes surprise {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
+@keyframes pop{
+    from{
+        transform:scale(0);
     }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
+    to{
+        transform:scale(1);
     }
-}
-
-#surprise h2 {
-    margin-bottom: 15px;
-}
-
-#surprise p {
-    line-height: 1.7;
 }
 
 /* Floating hearts */
-.heart {
-    position: fixed;
-    bottom: -50px;
-    font-size: 25px;
-    animation: floatUp linear forwards;
-    pointer-events: none;
-    z-index: 1;
+.heart{
+    position:fixed;
+    bottom:-40px;
+    animation:float 7s linear forwards;
+    z-index:1;
 }
 
-@keyframes floatUp {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
+@keyframes float{
+    from{
+        transform:translateY(0) rotate(0);
+        opacity:1;
     }
-
-    100% {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
     }
-}
-
-/* Stars */
-.star {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-    from {
-        opacity: 0.2;
-        transform: scale(0.5);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1.5);
-    }
-}
-
-/* Footer */
-.footer {
-    margin-top: 25px;
-    font-size: 14px;
-    opacity: 0.8;
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media(max-width:500px){
 
-    .card {
-        padding: 30px 18px;
-    }
+h1{
+    font-size:30px;
+}
 
-    h1 {
-        font-size: 30px;
-    }
+.big-heart{
+    font-size:60px;
+}
 
-    .big-heart {
-        font-size: 65px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-    }
-
-    .message {
-        font-size: 16px;
-    }
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <div class="card">
+<div class="card">
 
-        <div class="big-heart">❤️</div>
+<div class="big-heart">❤️</div>
 
-        <h1>
-            To My Bestie,
-            <span class="name">
-                Nana Yaa Nhyira Twumasi-Ankrah
-            </span>
-            💕
-        </h1>
+<h1>
+To My Bestie,
+<span class="name">
+Joycelyn
+</span>
+💕
+</h1>
 
-        <p class="subtitle">
-            Some people come into your life and make
-            everything a little brighter.
-            You are one of those people. ❤️
-        </p>
+<p class="subtitle">
+Some people enter your life and make it brighter.
+You are one of those special people. ❤️
+</p>
 
-        <div class="message">
 
-            <p>
-                I just want you to know how much I appreciate you. ❤️
-            </p>
+<div class="message">
 
-            <br>
+<p>
+Joycelyn, I just want you to know how much I appreciate you. ❤️
+</p>
 
-            <p>
-                Thank you for being there for me,
-                for listening to me, supporting me,
-                making me laugh and simply being yourself.
-            </p>
+<br>
 
-            <br>
+<p>
+Thank you for being there for me,
+for listening to me,
+supporting me,
+and making beautiful memories with me.
+</p>
 
-            <p>
-                Through the good days and the difficult ones,
-                your presence has meant more to me
-                than I can properly explain.
-            </p>
+<br>
 
-            <br>
+<p>
+Your kindness, your smile,
+and your presence mean more than words can explain.
+</p>
 
-            <p>
-                You are not just my bestie...
-                you are someone I genuinely treasure. 💖
-            </p>
+<br>
 
-            <br>
+<p>
+You are not just my bestie...
+you are someone I truly treasure. 💖
+</p>
 
-            <p>
-                I am really grateful that life gave me
-                a beautiful person like you to call my bestie. 🥹💕
-            </p>
+<br>
 
-        </div>
-
-        <button onclick="showSurprise()">
-            💌 Tap For A Surprise
-        </button>
-
-        <div id="surprise">
-
-            <h2>💖 One More Thing...</h2>
-
-            <p>
-                Nana Yaa, no matter where life takes us,
-                I hope you always remember that there is
-                someone who appreciates you deeply.
-            </p>
-
-            <br>
-
-            <p>
-                Thank you for being there.
-                Thank you for being you.
-                And thank you for being my bestie. ❤️
-            </p>
-
-            <br>
-
-            <h2>
-                Besties Forever 🫶💕
-            </h2>
-
-            <br>
-
-            <div style="font-size:45px;">
-                ❤️ 💕 💖 💗 💓
-            </div>
-
-        </div>
-
-        <div class="footer">
-            Made with ❤️ especially for Nana Yaa.
-        </div>
-
-    </div>
+<p>
+Thank you for being YOU. 🥹💕
+</p>
 
 </div>
 
+
+<button onclick="showLove()">
+💌 Tap For A Surprise
+</button>
+
+
+<div id="surprise">
+
+<h2>
+💖 Joycelyn, One More Thing...
+</h2>
+
+<br>
+
+<p>
+No matter where life takes us,
+always remember that someone is grateful
+to have you in their life.
+</p>
+
+<br>
+
+<p>
+You are amazing,
+you are special,
+and you deserve all the happiness in the world. ❤️
+</p>
+
+<br>
+
+<h2>
+Besties Forever 🫶💕
+</h2>
+
+</div>
+
+
+<p style="margin-top:25px;">
+Made with ❤️ especially for Joycelyn
+</p>
+
+
+</div>
+
+</div>
+
+
+
 <script>
 
-/* =========================
-   SURPRISE BUTTON
-========================= */
+function createHeart(){
 
-function showSurprise() {
+let heart=document.createElement("div");
 
-    const surprise = document.getElementById("surprise");
+heart.className="heart";
 
-    surprise.style.display = "block";
+let icons=[
+"❤️",
+"💕",
+"💖",
+"💗",
+"💓",
+"💘"
+];
 
-    // Create a heart explosion
-    for (let i = 0; i < 40; i++) {
-        createHeart();
-    }
+heart.innerHTML=
+icons[Math.floor(Math.random()*icons.length)];
+
+
+heart.style.left=
+Math.random()*100+"vw";
+
+
+heart.style.fontSize=
+20+Math.random()*30+"px";
+
+
+heart.style.animationDuration=
+4+Math.random()*5+"s";
+
+
+document.body.appendChild(heart);
+
+
+setTimeout(()=>{
+heart.remove();
+},9000);
+
 }
 
 
-/* =========================
-   FLOATING HEARTS
-========================= */
 
-function createHeart() {
+setInterval(createHeart,500);
 
-    const heart = document.createElement("div");
 
-    heart.classList.add("heart");
 
-    const hearts = [
-        "❤️",
-        "💕",
-        "💖",
-        "💗",
-        "💓",
-        "💘",
-        "💝",
-        "💞"
-    ];
+function showLove(){
 
-    heart.innerHTML =
-        hearts[Math.floor(Math.random() * hearts.length)];
+document.getElementById("surprise").style.display="block";
 
-    heart.style.left =
-        Math.random() * 100 + "vw";
 
-    heart.style.fontSize =
-        (15 + Math.random() * 30) + "px";
+for(let i=0;i<50;i++){
 
-    heart.style.animationDuration =
-        (4 + Math.random() * 5) + "s";
+createHeart();
 
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 9000);
 }
 
-
-/* Continuously create hearts */
-
-setInterval(createHeart, 600);
-
-
-/* =========================
-   CREATE STARS
-========================= */
-
-for (let i = 0; i < 40; i++) {
-
-    const star = document.createElement("div");
-
-    star.classList.add("star");
-
-    star.style.left =
-        Math.random() * 100 + "vw";
-
-    star.style.top =
-        Math.random() * 100 + "vh";
-
-    star.style.animationDelay =
-        Math.random() * 2 + "s";
-
-    document.body.appendChild(star);
 }
 
 </script>
+
 
 </body>
 </html>
