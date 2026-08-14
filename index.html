@@ -1,156 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Mensah Family Legacy ❤️</title>
+<title>PLANKS - 2D Gaming Arena</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
 body{
-    background:linear-gradient(135deg,#fff0f5,#ffe4e1,#fff8dc);
-    color:#333;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#050505;
+    color:white;
+    text-align:center;
     overflow-x:hidden;
 }
 
-/* Floating hearts */
-.heart{
-    position:fixed;
-    bottom:-20px;
-    color:red;
-    animation:float 8s linear infinite;
-    font-size:25px;
+header{
+    padding:30px;
+    background:linear-gradient(90deg,#111,#222);
+    box-shadow:0 0 20px #00ffff;
 }
+
+.logo{
+    font-size:50px;
+    color:#00ffff;
+    text-shadow:0 0 20px cyan;
+    font-weight:bold;
+}
+
+.subtitle{
+    font-size:20px;
+    color:#aaa;
+}
+
+
+.container{
+    margin-top:50px;
+}
+
+
+.game-card{
+    width:300px;
+    height:250px;
+    margin:25px auto;
+    background:#111;
+    border:2px solid #00ffff;
+    border-radius:15px;
+    box-shadow:0 0 25px #00ffff;
+    padding:20px;
+    animation:float 3s infinite;
+}
+
 
 @keyframes float{
-    0%{
-        transform:translateY(0) rotate(0deg);
-        opacity:1;
-    }
-    100%{
-        transform:translateY(-100vh) rotate(360deg);
-        opacity:0;
+    50%{
+        transform:translateY(-10px);
     }
 }
 
 
-header{
-    text-align:center;
-    padding:40px;
-    background:#800020;
-    color:white;
-}
-
-header h1{
-    font-size:40px;
-    animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-    from{
-        text-shadow:0 0 10px white;
-    }
-    to{
-        text-shadow:0 0 30px gold;
-    }
+button{
+    padding:15px 30px;
+    border:none;
+    background:#00ffff;
+    color:black;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:20px;
 }
 
 
-.intro{
-    text-align:center;
-    padding:30px;
-    font-size:18px;
-}
-
-
-.family{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding:30px;
-}
-
-
-.card{
+button:hover{
     background:white;
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-    transition:.5s;
-    animation:slide 1.5s;
+    box-shadow:0 0 20px cyan;
 }
 
 
-.card:hover{
-    transform:translateY(-15px) scale(1.05);
+.car{
+    font-size:60px;
 }
 
-
-.card h2{
-    color:#800020;
-}
-
-
-.icon{
-    font-size:50px;
-}
-
-
-@keyframes slide{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-
-.tree{
-    text-align:center;
-    padding:40px;
-}
-
-.tree h2{
-    color:#800020;
-}
-
-
-.family-values{
-    background:#800020;
-    color:white;
-    padding:40px;
-    text-align:center;
-}
-
-
-.values span{
-    display:inline-block;
-    margin:15px;
-    font-size:20px;
-}
-
-
-.message{
-    padding:40px;
-    text-align:center;
-    font-size:22px;
-    font-style:italic;
+.fighter{
+    font-size:60px;
 }
 
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
+    margin-top:50px;
     padding:20px;
+    background:#111;
+    color:#777;
 }
 
 </style>
@@ -163,194 +101,75 @@ footer{
 
 <header>
 
-<h1>❤️ The Mensah Family Legacy ❤️</h1>
+<div class="logo">
+PLANKS
+</div>
 
-<p>Together as one, stronger forever</p>
+<p class="subtitle">
+DARK 2D GAMING ARENA
+</p>
 
 </header>
 
 
 
-<section class="intro">
-
-<h2>Welcome To Our Family</h2>
-
-<p>
-A place where love, unity, memories and generations come together.
-The Mensah family is built on love, respect and support.
-</p>
-
-</section>
+<div class="container">
 
 
+<div class="game-card">
 
-<section class="family">
-
-
-<div class="card">
-<div class="icon">👨</div>
-<h2>ISAAC JOEL MENSAH</h2>
-<h3>Father</h3>
-<p>
-The pillar of our family. His wisdom, strength and sacrifices create the foundation of our home.
-</p>
+<div class="car">
+🏎️
 </div>
 
+<h2>
+PLANKS Racing
+</h2>
 
-<div class="card">
-<div class="icon">👩</div>
-<h2>FREDA MENSAH</h2>
-<h3>Mother</h3>
 <p>
-The heart of the family. Her love, kindness and care bring peace and happiness to our home.
+Race opponents. Avoid obstacles. Beat the timer.
 </p>
+
+<button>
+PLAY RACING
+</button>
+
 </div>
 
 
 
-<div class="card">
-<div class="icon">⭐</div>
-<h2>KINGSLEY BAAFI MENSAH</h2>
-<h3>First Born</h3>
+
+<div class="game-card">
+
+<div class="fighter">
+🥊
+</div>
+
+<h2>
+PLANKS Fighter
+</h2>
+
 <p>
-The first chapter of the next generation, carrying the family name with pride and responsibility.
+1 vs 1 and 2 vs 2 battles with special powers.
 </p>
+
+<button onclick="location.href='racing.html'">
+PLAY RACING
+</button>
+
 </div>
 
 
-
-<div class="card">
-<div class="icon">✨</div>
-<h2>BRIGHT OHENE KYEI MENSAH</h2>
-<h3>Second Born</h3>
-<p>
-A bright personality bringing energy, friendship and wonderful memories to the family.
-</p>
 </div>
-
-
-
-<div class="card">
-<div class="icon">🌸</div>
-<h2>HILDA SERWAA MENSAH</h2>
-<h3>Third Born</h3>
-<p>
-A beautiful blessing whose presence brings joy and happiness to everyone.
-</p>
-</div>
-
-
-
-<div class="card">
-<div class="icon">💖</div>
-<h2>NINA ASEDA MENSAH</h2>
-<h3>Fourth Born</h3>
-<p>
-A precious gift whose smile adds beauty and love to our family journey.
-</p>
-</div>
-
-
-
-<div class="card">
-<div class="icon">🌟</div>
-<h2>MENSFRED NANA KWAME</h2>
-<h3>Fifth Born</h3>
-<p>
-The youngest star carrying the family's dreams and future hopes.
-</p>
-</div>
-
-
-</section>
-
-
-
-<section class="tree">
-
-<h2>🌳 Our Family Tree 🌳</h2>
-
-<p>
-ISAAC JOEL MENSAH ❤️ FREDA MENSAH
-<br>
-⬇️
-<br>
-KINGSLEY • BRIGHT • HILDA • NINA • MENSFRED
-</p>
-
-</section>
-
-
-
-<section class="family-values">
-
-<h2>Our Family Values</h2>
-
-<div class="values">
-
-<span>❤️ Love</span>
-<span>🤝 Unity</span>
-<span>🙏 Respect</span>
-<span>💪 Support</span>
-<span>🌍 Togetherness</span>
-
-</div>
-
-</section>
-
-
-
-<section class="message">
-
-<p>
-"No matter where life takes us,
-we will always remain one family connected by love."
-❤️
-</p>
-
-</section>
 
 
 
 <footer>
 
-© 2026 Mensah Family Legacy ❤️
+© 2026 PLANKS Gaming
 
 </footer>
 
 
-
-<script>
-
-// Create floating hearts
-
-function createHeart(){
-
-let heart=document.createElement("div");
-
-heart.className="heart";
-
-heart.innerHTML="❤️";
-
-heart.style.left=Math.random()*100+"%";
-
-heart.style.animationDuration=(Math.random()*5+5)+"s";
-
-document.body.appendChild(heart);
-
-
-setTimeout(()=>{
-heart.remove();
-},8000);
-
-}
-
-
-setInterval(createHeart,500);
-
-
-</script>
-
-
 </body>
-</html>
+</html>file:///data/user/0/com.foxdebug.acodefree/files/public/Babree/Family/index.html
