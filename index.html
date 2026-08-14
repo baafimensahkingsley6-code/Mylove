@@ -1,95 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PLANKS - 2D Gaming Arena</title>
+
+<title>My Bestie Joycelyn 💖</title>
 
 <style>
-body{
+
+body {
     margin:0;
     font-family:Arial, sans-serif;
-    background:#050505;
-    color:white;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
     text-align:center;
+    color:white;
     overflow-x:hidden;
 }
 
-header{
-    padding:30px;
-    background:linear-gradient(90deg,#111,#222);
-    box-shadow:0 0 20px #00ffff;
-}
 
-.logo{
-    font-size:50px;
-    color:#00ffff;
-    text-shadow:0 0 20px cyan;
-    font-weight:bold;
-}
-
-.subtitle{
-    font-size:20px;
-    color:#aaa;
+.container {
+    padding:40px 20px;
 }
 
 
-.container{
-    margin-top:50px;
+h1 {
+    font-size:45px;
+    animation:glow 2s infinite alternate;
 }
 
 
-.game-card{
-    width:300px;
-    height:250px;
-    margin:25px auto;
-    background:#111;
-    border:2px solid #00ffff;
-    border-radius:15px;
-    box-shadow:0 0 25px #00ffff;
-    padding:20px;
-    animation:float 3s infinite;
-}
+@keyframes glow {
+    from {
+        text-shadow:0 0 10px white;
+    }
 
-
-@keyframes float{
-    50%{
-        transform:translateY(-10px);
+    to {
+        text-shadow:0 0 30px pink;
     }
 }
 
 
-button{
-    padding:15px 30px;
+
+.card {
+
+    background:rgba(255,255,255,0.25);
+    padding:30px;
+    border-radius:25px;
+    max-width:500px;
+    margin:auto;
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.profile {
+
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 0 25px white;
+    animation:floatImage 3s infinite ease-in-out;
+
+}
+
+
+
+@keyframes floatImage {
+
+    0% {
+        transform:translateY(0);
+    }
+
+    50% {
+        transform:translateY(-15px);
+    }
+
+    100% {
+        transform:translateY(0);
+    }
+
+}
+
+
+
+p {
+
+    font-size:20px;
+    line-height:1.6;
+
+}
+
+
+
+button {
+
+    background:#ff4081;
     border:none;
-    background:#00ffff;
-    color:black;
-    font-weight:bold;
-    border-radius:10px;
+    padding:15px 30px;
+    color:white;
+    font-size:18px;
+    border-radius:30px;
     cursor:pointer;
     margin-top:20px;
+    transition:0.3s;
+
 }
 
 
-button:hover{
-    background:white;
-    box-shadow:0 0 20px cyan;
+
+button:hover {
+
+    transform:scale(1.1);
+    background:#e91e63;
+
 }
 
 
-.car{
-    font-size:60px;
+
+#secret {
+
+    display:none;
+    margin-top:20px;
+    font-size:22px;
+    animation:appear 1s;
+
 }
 
-.fighter{
-    font-size:60px;
+
+
+@keyframes appear {
+
+    from {
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
 
 
-footer{
-    margin-top:50px;
-    padding:20px;
-    background:#111;
-    color:#777;
+
+.heart {
+
+    position:absolute;
+    color:red;
+    font-size:25px;
+    animation:float 6s infinite;
+
 }
+
+
+
+@keyframes float {
+
+    0% {
+
+        transform:translateY(100vh);
+        opacity:1;
+
+    }
+
+
+    100% {
+
+        transform:translateY(-10vh);
+        opacity:0;
+
+    }
+
+}
+
+
 
 </style>
 
@@ -99,77 +185,107 @@ footer{
 <body>
 
 
-<header>
-
-<div class="logo">
-PLANKS
-</div>
-
-<p class="subtitle">
-DARK 2D GAMING ARENA
-</p>
-
-</header>
-
-
-
 <div class="container">
 
 
-<div class="game-card">
+<h1>💖 Joycelyn 💖</h1>
 
-<div class="car">
-🏎️
-</div>
 
-<h2>
-PLANKS Racing
-</h2>
+<div class="card">
+
+
+<img src="joycelyn.jpg" class="profile" alt="Joycelyn">
+
 
 <p>
-Race opponents. Avoid obstacles. Beat the timer.
+
+Dear Joycelyn 🌸,<br><br>
+
+You are not just my bestie, you are a beautiful soul who brings happiness, laughter and positive energy wherever you go.
+
+Your smile, kindness and caring heart make you someone truly special.
+
+Thank you for always being amazing and for creating beautiful memories.
+
+Never forget that you are valuable, unique and appreciated. 💕
+
 </p>
 
-<button>
-PLAY RACING
+
+
+<button onclick="showSecret()">
+
+🎁 Click For A Special Surprise
+
 </button>
 
-</div>
 
 
+<div id="secret">
 
+✨ Special Message For Joycelyn ✨
 
-<div class="game-card">
+<br><br>
 
-<div class="fighter">
-🥊
-</div>
+You are one of the rare people who make life brighter.
 
-<h2>
-PLANKS Fighter
-</h2>
-
-<p>
-1 vs 1 and 2 vs 2 battles with special powers.
-</p>
-
-<button onclick="location.href='racing.html'">
-PLAY RACING
-</button>
-
-</div>
-
+Your friendship is a precious gift, and I hope you always remember how amazing you are. 🌹💖
 
 </div>
 
 
 
-<footer>
+</div>
 
-© 2026 PLANKS Gaming
+</div>
 
-</footer>
+
+
+
+<script>
+
+
+function showSecret(){
+
+document.getElementById("secret").style.display="block";
+
+}
+
+
+
+setInterval(function(){
+
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+
+
+document.body.appendChild(heart);
+
+
+
+setTimeout(function(){
+
+heart.remove();
+
+},6000);
+
+
+
+},500);
+
+
+
+</script>
 
 
 </body>
-</html>file:///data/user/0/com.foxdebug.acodefree/files/public/Babree/Family/index.html
+
+</html>
