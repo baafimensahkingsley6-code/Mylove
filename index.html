@@ -1,1067 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For My Bestie Joycelyn ❤️</title>
+<title>My Love For Safia ❤️</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-
-background:linear-gradient(135deg,#ff4f81,#8e44ad);
-color:white;
-overflow-x:hidden;
-
+    height:100vh;
+    background:linear-gradient(135deg,#ff4e8a,#ff9a9e);
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
 }
 
+.container{
+    text-align:center;
+    background:rgba(255,255,255,0.2);
+    padding:35px;
+    border-radius:25px;
+    width:90%;
+    max-width:500px;
+    backdrop-filter:blur(10px);
+    animation:show 2s ease;
+}
 
-/* Floating hearts */
+h1{
+    font-size:40px;
+    animation:pulse 2s infinite;
+}
+
+h2{
+    margin:15px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4081;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.message{
+    display:none;
+    margin-top:25px;
+    font-size:20px;
+}
 
 .heart{
-
-position:fixed;
-bottom:-40px;
-font-size:25px;
-animation:float 7s linear forwards;
-z-index:5;
-
+    position:absolute;
+    top:-20px;
+    font-size:25px;
+    animation:fall linear forwards;
 }
 
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-opacity:1;
-
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
 }
-
-100%{
-
-transform:translateY(-120vh);
-opacity:0;
-
-}
-
-}
-
-
-/* Hero */
-
-.hero{
-
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-
-}
-
-
-.hero h1{
-
-font-size:clamp(45px,10vw,90px);
-animation:glow 2s infinite alternate;
-
-}
-
-
-@keyframes glow{
-
-from{
-
-text-shadow:0 0 10px white;
-
-}
-
-to{
-
-text-shadow:
-0 0 30px white,
-0 0 60px pink;
-
-}
-
-}
-
-
-.hero p{
-
-font-size:20px;
-line-height:1.7;
-margin-top:20px;
-
-}
-
-
-.btn{
-
-margin-top:30px;
-padding:15px 35px;
-border:none;
-border-radius:50px;
-background:white;
-color:#e84375;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-
-.btn:hover{
-
-transform:scale(1.1);
-
-}
-
-
-/* Sections */
-
-section{
-
-padding:80px 20px;
-text-align:center;
-
-}
-
-
-.title{
-
-font-size:40px;
-margin-bottom:35px;
-
-}
-
-
-/* Typing */
-
-.typing{
-
-font-size:30px;
-font-weight:bold;
-min-height:60px;
-color:#ffd1e3;
-
-}
-
-
-/* Letter */
-
-.letter{
-
-max-width:800px;
-margin:auto;
-background:rgba(255,255,255,.15);
-padding:35px;
-border-radius:25px;
-backdrop-filter:blur(10px);
-
-}
-
-
-.letter p{
-
-font-size:18px;
-line-height:2;
-
-}
-
-
-
-/* Cards */
-
-.cards{
-
-max-width:1000px;
-margin:auto;
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-
-}
-
-
-.card{
-
-background:rgba(255,255,255,.15);
-padding:30px;
-border-radius:25px;
-transition:.4s;
-
-}
-
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-.icon{
-
-font-size:50px;
-margin-bottom:15px;
-
-}
-
-
-.card h3{
-
-font-size:24px;
-margin-bottom:10px;
-
-}
-
-
-
-/* Gallery */
-
-.gallery{
-
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:20px;
-
-}
-
-
-.photo{
-
-height:300px;
-background:rgba(255,255,255,.15);
-border-radius:25px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:70px;
-overflow:hidden;
-
-}
-
-
-.photo img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-
-}
-
-
-
-/* Timeline */
-
-.timeline{
-
-max-width:800px;
-margin:auto;
-
-}
-
-
-.story{
-
-background:rgba(255,255,255,.15);
-padding:25px;
-margin:25px;
-border-radius:20px;
-text-align:left;
-
-}
-
-
-.story h3{
-
-color:#ffd1e3;
-
-}
-
-
-
-/* Music */
-
-.music-btn{
-
-width:80px;
-height:80px;
-border-radius:50%;
-border:none;
-font-size:35px;
-cursor:pointer;
-
-}
-
-
-
-/* Secret */
-
-.big-heart{
-
-font-size:120px;
-cursor:pointer;
-animation:pulse 1s infinite;
-
-}
-
 
 @keyframes pulse{
-
-50%{
-
-transform:scale(1.2);
-
+    50%{
+        transform:scale(1.1);
+    }
 }
 
-}
-
-
-.secret{
-
-display:none;
-max-width:700px;
-margin:auto;
-padding:30px;
-background:rgba(255,255,255,.15);
-border-radius:25px;
-
-}
-
-
-/* Footer */
-
-footer{
-
-padding:30px;
-background:rgba(0,0,0,.3);
-text-align:center;
-
-}
-
-
-
-@media(max-width:600px){
-
-.hero p{
-
-font-size:17px;
-
-}
-
-.title{
-
-font-size:30px;
-
-}
-
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
 
 </head>
+
+
 <body>
 
-<!-- HERO -->
 
-<section class="hero">
+<div class="container">
 
-<div>
+<h1>❤️ My Love For You ❤️</h1>
 
-<h1>❤️ Joycelyn ❤️</h1>
-
-<div class="typing">
-<span id="typing"></span>
-</div>
-
-<p>
-I created this little website specially for my amazing bestie.
-Thank you for always being there and making life brighter. 💕
-</p>
-
-
-<button class="btn" onclick="openLetter()">
-💌 Open My Message
-</button>
-
-</div>
-
-</section>
-
-
-
-<!-- MESSAGE -->
-
-<section id="message">
-
-<h2 class="title">
-💌 A Message For My Bestie
-</h2>
-
-
-<div class="letter">
-
-<p>
-
-Dear Joycelyn ❤️,
-
-<br><br>
-
-I created this website just for you because
-a wonderful bestie like you deserves something special.
-
-<br><br>
-
-Thank you for the smiles, the support,
-the conversations and the memories.
-
-<br><br>
-
-Having someone who understands, encourages
-and brings happiness into life is a beautiful thing.
-
-<br><br>
-
-Never forget that you are appreciated,
-valued and amazing.
-
-<br><br>
-
-Keep being the wonderful person you are. ✨
-
-<br><br>
-
-Your bestie ❤️
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- WHY SPECIAL -->
-
-<section>
-
-<h2 class="title">
-✨ Why Joycelyn Is Special
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<div class="icon">
-😊
-</div>
-
-<h3>Your Smile</h3>
-
-<p>
-Your smile has a way of making ordinary moments better.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-❤️
-</div>
-
-<h3>Your Friendship</h3>
-
-<p>
-A friendship like yours is something truly special.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-✨
-</div>
-
-<h3>Your Support</h3>
-
-<p>
-Thank you for always being someone I can count on.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-🥰
-</div>
-
-<h3>Simply Joycelyn</h3>
-
-<p>
-You are special because you are simply yourself.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<!-- PHOTO GALLERY -->
-
-<section>
-
-
-<h2 class="title">
-📸 Our Memories
-</h2>
-
-
-<div class="gallery">
-
-
-<div class="photo">
-
-<img src="photo1.jpg">
-
-</div>
-
-
-<div class="photo">
-
-<img src="photo2.jpg">
-
-</div>
-
-
-<div class="photo">
-
-<img src="photo3.jpg">
-
-</div>
-
-
-</div>
+<h2>Dear SAFIA 🌹</h2>
 
 
 <p>
-Replace photo1, photo2 and photo3 with your pictures.
-❤️
+Safia, you are a beautiful part of my life.
+Your smile brings happiness to my heart,
+and I want you to always remember how special you are.
 </p>
 
 
-</section>
-
-
-
-
-
-
-<!-- STORY -->
-
-
-<section>
-
-
-<h2 class="title">
-📖 Our Friendship Story
-</h2>
-
-
-
-<div class="timeline">
-
-
-<div class="story">
-
-<h3>
-🌸 The Beginning
-</h3>
-
-<p>
-A simple friendship that became something meaningful.
-</p>
-
-</div>
-
-
-
-<div class="story">
-
-<h3>
-💕 Amazing Moments
-</h3>
-
-<p>
-Every laugh, conversation and memory made the friendship stronger.
-</p>
-
-</div>
-
-
-
-<div class="story">
-
-<h3>
-✨ Today
-</h3>
-
-<p>
-Still creating beautiful memories together.
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- MUSIC -->
-
-
-<section>
-
-
-<h2 class="title">
-🎵 Music Time
-</h2>
-
-
-<p>
-Add your favourite friendship song.
-</p>
-
-
-<button class="music-btn" onclick="music()">
-🎵
+<button onclick="showLove()">
+Click For A Surprise 💕
 </button>
 
 
-<audio id="song">
+<div class="message" id="love">
 
-<source src="song.mp3">
+💌 SAFIA,
 
-</audio>
+<br><br>
 
+I may not have the perfect words,
+but I want you to know that I appreciate you,
+care about you, and I am grateful for every moment.
 
-<p id="musicText">
-Music OFF
-</p>
+<br><br>
 
+You are amazing, and I hope this little website
+reminds you how special you are.
 
-</section>
+<br><br>
 
+Forever with love ❤️
 
+<br><br>
 
-
-
-<!-- SECRET -->
-
-<section>
-
-
-<h2 class="title">
-💗 Tap The Heart
-</h2>
-
-
-<div class="big-heart" onclick="secret()">
-
-❤️
+- KING 👑
 
 </div>
 
 
-
-<div class="secret" id="secret">
-
-
-<h2>
-💌 Secret Message
-</h2>
-
-
-<p>
-
-Joycelyn ❤️
-
-<br><br>
-
-Thank you for being an amazing friend.
-
-<br><br>
-
-Life becomes better when you have people
-who bring happiness and positive energy.
-
-<br><br>
-
-Always remember:
-
-<br>
-
-YOU ARE AMAZING ✨
-
-</p>
-
-
 </div>
-
-
-</section>
-
-
-
-
-
-
-<!-- FINAL -->
-
-
-<section>
-
-
-<h2 class="title">
-❤️ One Last Thing
-</h2>
-
-
-<p style="font-size:22px;line-height:2;">
-
-
-Joycelyn,
-
-<br><br>
-
-This website is a small reminder that
-you are appreciated.
-
-<br><br>
-
-Thank you for being my bestie.
-
-❤️
-
-
-</p>
-
-
-<button class="btn" onclick="explode()">
-
-💥 Surprise
-
-</button>
-
-
-</section>
-
-
-
-
-
-<footer>
-
-Made with ❤️ for my bestie Joycelyn
-
-</footer>
-
-
 
 
 
 <script>
 
+function showLove(){
 
-// Typing animation
-
-let words=[
-
-"My bestie Joycelyn is amazing ❤️",
-
-"Thank you for always being there 💕",
-
-"Friendship like this is special ✨"
-
-];
-
-
-let i=0;
-let j=0;
-
-
-function typing(){
-
-if(j < words[i].length){
-
-document.getElementById("typing").innerHTML += words[i][j];
-
-j++;
-
-setTimeout(typing,100);
-
-}
-
-else{
-
-setTimeout(()=>{
-
-document.getElementById("typing").innerHTML="";
-
-j=0;
-
-i++;
-
-if(i>=words.length){
-i=0;
-}
-
-typing();
-
-
-},1500);
-
-}
+document.getElementById("love").style.display="block";
 
 }
 
 
-typing();
+function createHeart(){
 
+let heart=document.createElement("div");
 
+heart.className="heart";
 
+heart.innerHTML="❤️";
 
+heart.style.left=Math.random()*100+"vw";
 
-// Floating hearts
+heart.style.animationDuration=(Math.random()*3+3)+"s";
 
-
-function hearts(){
-
-let h=document.createElement("div");
-
-h.className="heart";
-
-h.innerHTML=[
-"❤️",
-"💕",
-"💖",
-"✨"
-][Math.floor(Math.random()*4)];
-
-
-h.style.left=Math.random()*100+"vw";
-
-h.style.animationDuration=
-(Math.random()*3+4)+"s";
-
-
-document.body.appendChild(h);
+document.body.appendChild(heart);
 
 
 setTimeout(()=>{
-
-h.remove();
-
-},7000);
-
+heart.remove();
+},6000);
 
 }
 
 
-setInterval(hearts,400);
-
-
-
-
-
-
-// Open message
-
-
-function openLetter(){
-
-document.getElementById("message")
-.scrollIntoView({
-
-behavior:"smooth"
-
-});
-
-}
-
-
-
-
-
-// Music
-
-
-let playing=false;
-
-
-function music(){
-
-let song=document.getElementById("song");
-
-if(!playing){
-
-song.play();
-
-document.getElementById("musicText").innerHTML=
-"🎵 Music Playing";
-
-playing=true;
-
-}
-
-else{
-
-song.pause();
-
-document.getElementById("musicText").innerHTML=
-"Music OFF";
-
-playing=false;
-
-}
-
-}
-
-
-
-
-
-
-// Secret
-
-
-function secret(){
-
-document.getElementById("secret").style.display="block";
-
-explode();
-
-}
-
-
-
-
-
-// Explosion
-
-
-function explode(){
-
-
-for(let x=0;x<50;x++){
-
-
-let h=document.createElement("div");
-
-h.innerHTML="❤️";
-
-h.style.position="fixed";
-
-h.style.left="50%";
-
-h.style.top="50%";
-
-h.style.fontSize="30px";
-
-document.body.appendChild(h);
-
-
-
-let a=(Math.random()-0.5)*600;
-
-let b=(Math.random()-0.5)*600;
-
-
-h.animate([
-
-{
-
-transform:"translate(0,0)",
-
-opacity:1
-
-},
-
-{
-
-transform:`translate(${a}px,${b}px)`,
-
-opacity:0
-
-}
-
-],{
-
-duration:1500
-
-});
-
-
-setTimeout(()=>{
-
-h.remove();
-
-},1500);
-
-
-}
-
-
-}
-
+setInterval(createHeart,300);
 
 
 </script>
 
 
 </body>
-
 </html>
