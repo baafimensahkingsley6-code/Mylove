@@ -3,243 +3,216 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>For My Bestie Peachrene 💕</title>
+<title>KING ❤️ NANA AFIA</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
-    color: white;
-    min-height: 100vh;
-    overflow-x: hidden;
-    text-align: center;
-}
-
-/* Main container */
-.container {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-/* Opening section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero h1 {
-    font-size: 55px;
-    margin-bottom: 15px;
-    animation: glow 2s infinite alternate;
-}
-
-.hero h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    line-height: 1.7;
-}
-
-/* Buttons */
-button {
-    margin-top: 25px;
-    padding: 15px 28px;
-    border: none;
-    border-radius: 30px;
-    background: white;
-    color: #ff4f81;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-button:hover {
-    transform: scale(1.08);
-}
-
-/* Message box */
-.message {
-    display: none;
-    margin-top: 25px;
-    padding: 25px;
-    background: rgba(255,255,255,0.18);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    line-height: 1.8;
-    animation: appear 1s ease;
-}
-
-/* Sections */
-section {
-    padding: 70px 10px;
-}
-
-section h2 {
-    font-size: 35px;
-    margin-bottom: 25px;
-}
-
-.card {
-    background: rgba(255,255,255,0.15);
-    padding: 25px;
-    border-radius: 25px;
-    margin: 20px 0;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.card h3 {
-    margin-bottom: 12px;
-    font-size: 24px;
-}
-
-.card p {
-    line-height: 1.7;
-}
-
-/* Photo area */
-.photo-box {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-    margin: auto;
-    border-radius: 30px;
-    border: 4px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255,255,255,0.15);
-    overflow: hidden;
-}
-
-.photo-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Heart button */
-.big-heart {
-    font-size: 80px;
-    cursor: pointer;
-    display: inline-block;
-    animation: heartbeat 1.2s infinite;
-}
-
-/* Footer */
-footer {
-    padding: 30px;
-    background: rgba(0,0,0,0.15);
+body{
+    background:linear-gradient(135deg,#16002b,#39005c,#12001f);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
 }
 
 /* Floating hearts */
-.heart {
-    position: fixed;
-    bottom: -50px;
-    font-size: 25px;
-    animation: floatUp 6s linear forwards;
-    pointer-events: none;
-    z-index: 999;
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:22px;
+    animation:float 7s linear infinite;
+    opacity:.8;
+    pointer-events:none;
 }
 
-/* Sparkles */
-.sparkle {
-    position: fixed;
-    pointer-events: none;
-    animation: sparkleAnimation 1s linear forwards;
-    z-index: 1000;
-}
-
-/* Animations */
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px white;
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
     }
-    to {
-        text-shadow: 0 0 35px #fff;
+    20%{opacity:1;}
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
     }
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
+/* Main container */
+.container{
+    width:92%;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px 15px;
+}
+
+.badge{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    padding:10px 20px;
+    border-radius:30px;
+    backdrop-filter:blur(10px);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(42px,12vw,90px);
+    background:linear-gradient(90deg,#ff77c8,#fff,#a66cff);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{filter:drop-shadow(0 0 5px #ff4fbd);}
+    to{filter:drop-shadow(0 0 25px #a66cff);}
+}
+
+.hero h2{
+    margin-top:10px;
+    font-size:clamp(22px,6vw,40px);
+}
+
+.hero p{
+    max-width:650px;
+    margin:20px auto;
+    line-height:1.8;
+    color:#eadcf5;
+}
+
+button{
+    border:none;
+    padding:15px 28px;
+    border-radius:35px;
+    background:linear-gradient(90deg,#ff3cac,#784cff);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(255,0,180,.3);
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+/* Sections */
+section{
+    padding:80px 15px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:30px;
+    margin:20px auto;
+    backdrop-filter:blur(15px);
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.card h2{
+    color:#ff8bd8;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.9;
+    color:#eee;
+}
+
+/* Reasons */
+.reasons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.reason{
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.07);
+    transition:.4s;
+}
+
+.reason:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.13);
+}
+
+.reason .icon{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+/* Surprise */
+#surprise{
+    display:none;
+    margin-top:25px;
+    animation:appear 1s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:scale(.7);
     }
-    50% {
-        transform: scale(1.25);
+    to{
+        opacity:1;
+        transform:scale(1);
     }
 }
 
-@keyframes floatUp {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
+.big-heart{
+    font-size:80px;
+    animation:beat 1s infinite;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes beat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.25);}
 }
 
-@keyframes sparkleAnimation {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
+/* Footer */
+footer{
+    padding:40px 15px;
+    text-align:center;
+    color:#cdb9d8;
+}
 
-    100% {
-        transform: scale(2);
-        opacity: 0;
-    }
+.signature{
+    font-size:25px;
+    color:#ff8bd8;
+    margin-top:10px;
 }
 
 /* Mobile */
-@media(max-width:600px) {
-
-    .hero h1 {
-        font-size: 40px;
+@media(max-width:600px){
+    .card{
+        padding:22px;
     }
 
-    .hero h2 {
-        font-size: 20px;
+    section{
+        padding:60px 12px;
     }
 
-    section h2 {
-        font-size: 28px;
-    }
-
-    .photo-box {
-        height: 300px;
+    .hero p{
+        font-size:14px;
     }
 }
 </style>
@@ -247,85 +220,95 @@ footer {
 
 <body>
 
+<div class="container">
+
 <!-- HERO -->
 <div class="hero">
 
-    <div class="container">
+    <div class="badge">✨ A Friendship Story ✨</div>
 
-        <div class="big-heart">💗</div>
+    <h1>KING ❤️</h1>
 
-        <h1>Peachrene</h1>
+    <h2>NANA AFIA</h2>
 
-        <h2>My Amazing Bestie 🌸</h2>
+    <p>
+        Some people enter your life as friends...
+        but somehow become a part of you.
+        This little website is for someone very special to me.
+    </p>
 
-        <p>
-            This little website was created especially for you,
-            Peachrene, because some people deserve more than just
-            ordinary words. ❤️
-        </p>
-
-        <button onclick="showMessage()">
-            💌 Click For A Surprise
-        </button>
-
-        <div class="message" id="specialMessage">
-            Peachrene, you are one of those special people who make
-            life brighter just by being around. 🌷
-
-            <br><br>
-
-            Thank you for the laughs, the conversations, the memories,
-            the support and all the beautiful moments.
-
-            <br><br>
-
-            No matter where life takes us, I hope you always remember
-            that you are appreciated, valued and truly special. 💕
-        </div>
-
-    </div>
+    <button onclick="scrollToStory()">
+        💖 Enter Our Story
+    </button>
 
 </div>
 
 
-<!-- ABOUT SECTION -->
+<!-- STORY -->
+<section id="story">
+
+    <div class="card">
+
+        <h2>🌸 Dear Nana Afia</h2>
+
+        <p>
+            Nana Afia, you are not just my best friend.
+            You are someone who has become a beautiful part of my life.
+            Through laughter, crazy moments, serious conversations,
+            good days and difficult days, our friendship means a lot to me.
+        </p>
+
+        <br>
+
+        <p>
+            I may not always say it, but I appreciate you.
+            Having someone who understands you, supports you,
+            laughs with you and simply stays by your side is something
+            truly special.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- WHY SHE IS SPECIAL -->
 <section>
 
-    <div class="container">
+    <h2>💎 Why You Are Special</h2>
 
-        <h2>🌸 Why You're Special 🌸</h2>
+    <div class="reasons">
 
-        <div class="card">
-
-            <h3>💖 Your Heart</h3>
-
+        <div class="reason">
+            <div class="icon">😂</div>
+            <h3>Your Laughter</h3>
             <p>
-                You have a beautiful heart, and the kindness you show
-                to people is something worth appreciating.
+                You know how to turn ordinary moments into memories.
             </p>
-
         </div>
 
-        <div class="card">
-
-            <h3>😂 Your Vibes</h3>
-
+        <div class="reason">
+            <div class="icon">🤝</div>
+            <h3>Your Friendship</h3>
             <p>
-                You know how to make ordinary moments fun.
-                Your personality can turn a boring day into a memorable one.
+                You have shown me that real friendship is about being there.
             </p>
-
         </div>
 
-        <div class="card">
-
-            <h3>🤝 Our Friendship</h3>
-
+        <div class="reason">
+            <div class="icon">🌟</div>
+            <h3>Your Presence</h3>
             <p>
-                True friendship isn't about talking every second.
-                It's about knowing that someone is there when you need them.
+                Sometimes simply knowing you're there makes everything better.
             </p>
+        </div>
 
+        <div class="reason">
+            <div class="icon">❤️</div>
+            <h3>Your Heart</h3>
+            <p>
+                Your kindness and the person you are make you unforgettable.
+            </p>
         </div>
 
     </div>
@@ -333,247 +316,188 @@ footer {
 </section>
 
 
-<!-- PHOTO SECTION -->
+<!-- SPECIAL MESSAGE -->
 <section>
 
-    <div class="container">
+    <div class="card">
 
-        <h2>📸 A Special Memory</h2>
+        <h2>💌 A Message From KING</h2>
 
-        <div class="photo-box">
+        <p>
+            Nana Afia, if life were a book, I would be grateful that
+            our paths crossed and that friendship became one of the
+            chapters in my story.
+        </p>
 
-            <!--
-            TO ADD PEACHRENE'S PHOTO:
+        <br>
 
-            Replace the text below with:
+        <p>
+            I don't know what the future holds,
+            but I hope that no matter where life takes us,
+            we will always remember the friendship we shared.
+        </p>
 
-            <img src="peachrene.jpg" alt="Peachrene">
+        <br>
 
-            Then put peachrene.jpg in the same folder as this HTML file.
-            -->
-
-            <div>
-                <p style="font-size:60px;">🌸</p>
-                <p>Add Peachrene's picture here</p>
-            </div>
-
-        </div>
+        <p>
+            You are not just someone I call my best friend.
+            <strong>You are a part of me. ❤️</strong>
+        </p>
 
     </div>
 
 </section>
 
 
-<!-- FRIENDSHIP MESSAGE -->
+<!-- SURPRISE -->
 <section>
 
-    <div class="container">
+    <div class="card">
 
-        <h2>💌 A Message For You</h2>
+        <h2>🎁 Nana Afia, I Have Something For You</h2>
 
-        <div class="card">
+        <p>
+            There is one more message hidden here.
+            Tap the button below.
+        </p>
 
-            <p>
-                Dear Peachrene,
-                <br><br>
+        <br>
 
-                Life is full of different people, but only a few become
-                truly meaningful.
-
-                <br><br>
-
-                I'm grateful for every laugh, every conversation,
-                every crazy moment and every memory we've created.
-
-                <br><br>
-
-                Keep being yourself.
-                Keep smiling.
-                Keep shining.
-
-                <br><br>
-
-                You are AMAZING. 🌸💖✨
-            </p>
-
-        </div>
-
-        <button onclick="createHearts()">
-            💕 Send Love
+        <button onclick="showSurprise()">
+            🎁 Open Your Surprise
         </button>
 
-    </div>
+        <div id="surprise">
 
-</section>
+            <div class="big-heart">❤️</div>
 
+            <h2>You Mean A Lot To Me!</h2>
 
-<!-- FINAL SECTION -->
-<section>
+            <p>
+                Thank you for being my best friend,
+                for being part of my memories,
+                and for being part of my journey.
 
-    <div class="container">
+                <br><br>
 
-        <h2>🌟 One Last Thing...</h2>
-
-        <div class="card">
-
-            <p id="finalText">
-                Click the button below 👇
+                No matter how far life takes us,
+                I will always appreciate the friendship
+                between <strong>KING & NANA AFIA.</strong>
             </p>
-
-            <button onclick="specialEnding()">
-                ✨ Click Me
-            </button>
 
         </div>
 
     </div>
 
 </section>
+
+
+<!-- FINAL -->
+<section>
+
+    <div class="card">
+
+        <div style="font-size:60px;">👑 ❤️ 👑</div>
+
+        <h2>Forever A Special Friendship</h2>
+
+        <p>
+            This website was created specially for you, Nana Afia.
+            Not because a website can explain everything,
+            but because sometimes a little reminder is nice:
+        </p>
+
+        <br>
+
+        <h2>
+            "You are a part of my story,
+            and I will always value our friendship."
+        </h2>
+
+        <div class="signature">
+            — KING ❤️
+        </div>
+
+    </div>
+
+</section>
+
+</div>
 
 
 <footer>
-
-    <p>
-        Made with ❤️ especially for Peachrene
-    </p>
-
-    <p style="margin-top:10px;">
-        Bestie Forever 🌸♾️
-    </p>
-
+    Made with ❤️ by KING for NANA AFIA
+    <br>
+    © 2026
 </footer>
 
 
 <script>
 
-/* Surprise message */
+/* Scroll to story */
+function scrollToStory(){
+    document.getElementById("story").scrollIntoView({
+        behavior:"smooth"
+    });
+}
 
-function showMessage() {
 
-    const message = document.getElementById("specialMessage");
+/* Surprise button */
+function showSurprise(){
 
-    if (message.style.display === "block") {
+    const surprise = document.getElementById("surprise");
 
-        message.style.display = "none";
+    surprise.style.display = "block";
 
-    } else {
-
-        message.style.display = "block";
-
-        createHearts();
-
-    }
+    createHearts(20);
 
 }
 
 
-/* Create floating hearts */
-
-function createHearts() {
-
-    for (let i = 0; i < 20; i++) {
-
-        setTimeout(() => {
-
-            const heart = document.createElement("div");
-
-            heart.className = "heart";
-
-            const hearts = ["❤️", "💕", "💗", "💖", "💘", "💝"];
-
-            heart.innerHTML =
-                hearts[Math.floor(Math.random() * hearts.length)];
-
-            heart.style.left =
-                Math.random() * 100 + "vw";
-
-            heart.style.fontSize =
-                (20 + Math.random() * 30) + "px";
-
-            heart.style.animationDuration =
-                (4 + Math.random() * 4) + "s";
-
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-
-                heart.remove();
-
-            }, 8000);
-
-        }, i * 100);
-
-    }
-
-}
-
-
-/* Click anywhere for sparkles */
-
-document.addEventListener("click", function(e) {
-
-    for (let i = 0; i < 5; i++) {
-
-        const sparkle = document.createElement("div");
-
-        sparkle.className = "sparkle";
-
-        sparkle.innerHTML = "✨";
-
-        sparkle.style.left =
-            (e.clientX + Math.random() * 40 - 20) + "px";
-
-        sparkle.style.top =
-            (e.clientY + Math.random() * 40 - 20) + "px";
-
-        document.body.appendChild(sparkle);
-
-        setTimeout(() => {
-
-            sparkle.remove();
-
-        }, 1000);
-
-    }
-
-});
-
-
-/* Final surprise */
-
-function specialEnding() {
-
-    document.getElementById("finalText").innerHTML =
-        "Peachrene, you are not just a bestie... " +
-        "you are one of the beautiful chapters in my story. ❤️🌸 " +
-        "Thank you for being YOU. ♾️";
-
-    createHearts();
-
-}
-
-
-/* Automatically create hearts every few seconds */
-
-setInterval(() => {
+/* Floating hearts */
+function createHeart(){
 
     const heart = document.createElement("div");
 
     heart.className = "heart";
 
-    heart.innerHTML = "💗";
+    const hearts = ["❤️","💖","💕","💗","💜","✨","🌸"];
 
-    heart.style.left = Math.random() * 100 + "vw";
+    heart.innerHTML =
+        hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left = Math.random()*100 + "vw";
+
+    heart.style.animationDuration =
+        (4 + Math.random()*5) + "s";
+
+    heart.style.fontSize =
+        (15 + Math.random()*25) + "px";
 
     document.body.appendChild(heart);
 
-    setTimeout(() => {
-
+    setTimeout(()=>{
         heart.remove();
+    },9000);
+}
 
-    }, 7000);
 
-}, 1500);
+/* Create hearts continuously */
+setInterval(createHeart,500);
+
+
+/* Extra hearts for surprise */
+function createHearts(amount){
+
+    for(let i=0;i<amount;i++){
+
+        setTimeout(()=>{
+            createHeart();
+        },i*100);
+
+    }
+
+}
 
 </script>
 
